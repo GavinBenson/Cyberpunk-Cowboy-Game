@@ -11,10 +11,7 @@ var object = {
 	menuCreate: function(obj) {
 
 		var location = "";
-
 		var name = "";
-
-
 
 
 		if (obj == 'rounds') {
@@ -50,16 +47,15 @@ var object = {
 					"</u>";
 		console.log(menu);
 		// GET option is in the popup menu if the object is on the
-		if (this.name == 'body') {
+		if (this.name == 'rounds'){
 			console.log('worked');
 			menu = menu +
 					"<br>" +
-					"<u onclick='rounds.etch()>" +
-						"Get" +
+					"<u onclick='rounds.etch()'>" +
+						"Etch" +
 					"</u>" +
 				"</span>" +
 			"</span>";
-			console.log(menu);
 		}
 		// DROP and PUT ON are options if the object is in the inventory
 		else if (this.location == 'inventory') {
